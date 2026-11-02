@@ -47,3 +47,11 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.88r
 @media print{header,footer,.bar,.cta,.chips{display:none}}
 
 .logo{display:flex;align-items:center;gap:10px}.logo img{flex:none;border-radius:8px}.logo small{display:block;font-size:.7rem;font-weight:500;color:var(--muted)}.skip{position:absolute;left:-9999px;top:0;background:var(--plum);color:var(--on);padding:10px 16px;z-index:50}.skip:focus{left:8px;top:8px}main{display:block}img{max-width:100%;height:auto}
+.hs{font-size:1.05rem}
+
+.wa-float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;line-height:1;padding:13px 18px 13px 14px;border-radius:99px;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:transform .15s ease,box-shadow .15s ease}
+.wa-float:hover,.wa-float:focus-visible{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.3);color:#fff}
+.wa-float:focus-visible{outline:3px solid #fff;outline-offset:2px;box-shadow:0 0 0 5px #128C7E}
+.wa-float svg{flex:none;display:block}
+@media (max-width:640px){.wa-float{padding:13px;right:14px}.wa-float span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
+@media print{.wa-float{display:none}}
